@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/qrcode.js" defer></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="main" id="main">
+      <img
+        srcset="https://img.icons8.com/ios/344/qr-code--v1.png 2x"
+        alt="icon"
+        loading="lazy"
+        style="
+          width: 172px;
+          height: 172px;
+          filter: invert(0%) sepia(4%) saturate(7500%) hue-rotate(252deg)
+            brightness(90%) contrast(104%);
+        "
+      />
+      <input
+        type="text"
+        class="dataBox"
+        name="data"
+        placeholder="Paste your content"
+        id="dataBox"
+        value=""
+        autocomplete="false"
+      />
+      <button class="btn" id="generateBtn">Generate</button>
+      <div class="qrdiv hide" id="qrdiv">
+        <div class="qrcode" id="qrcode"></div>
+        <button class="downloadBtn" id="downloadBtn">Download</button>
+      </div>
+    </div>
+  </body>
+</html>
